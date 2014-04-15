@@ -138,7 +138,10 @@ int execute_op(int x)
             break;
         case 2:
             clean();
-            cout << "it's two";
+            fstream teach_db("teacher.txt");
+            string output ;
+             teach_db >> output ;
+             cout << output ;
             break;
         }
         break;
@@ -151,12 +154,9 @@ int execute_op(int x)
                 clean();
                 cout << "Enter Student Name" << endl;
                 cin >> names;
-                cout << "Enter Ages" ;
+                cout << "Enter Ages" <<endl;
                 cin >> age;
                 student shemul(names , age);
-
-
-
         }
         break ;
     case 3:
