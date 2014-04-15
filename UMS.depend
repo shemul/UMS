@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1397499569 source:d:\study\pl2\ums\main.cpp
+	"misc.h"
+
+1396027813 d:\study\pl2\ums\aa.h
+	<iostream>
+
+1397500121 d:\study\pl2\ums\misc.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
+1397503618 source:c:\users\shajib_laptop\downloads\compressed\ums\ums\main.cpp
+	"misc.h"
+
+1397556874 c:\users\shajib_laptop\downloads\compressed\ums\ums\misc.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<fstream>
+
