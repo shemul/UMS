@@ -10,7 +10,7 @@ using namespace std;
 
 //variables
 string names , depts ;
-int salaries , decision ;
+int salaries , decision , age;
 
 class teacher
 {
@@ -35,6 +35,24 @@ class teacher
         {
            return name ;
         }
+
+};
+
+class student
+{
+    string stud_name ;
+    int stud_ages ;
+public:
+    student(string s , int a)
+    {
+        stud_name = s ;
+        stud_ages = a ;
+        ofstream stud_db("students.txt");
+                stud_db << s << endl;
+                stud_db << a << endl;
+
+                stud_db.close();
+    }
 
 };
 // Screen Cleaner
@@ -126,6 +144,20 @@ int execute_op(int x)
         break;
     case 2:
         get_student_option();
+        cin >> decision ;
+        switch(decision)
+        {
+            case 1:
+                clean();
+                cout << "Enter Student Name" << endl;
+                cin >> names;
+                cout << "Enter Ages" ;
+                cin >> age;
+                student shemul(names , age);
+
+
+
+        }
         break ;
     case 3:
         get_course_optin();
