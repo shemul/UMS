@@ -1,6 +1,8 @@
 
 <p>#University Management System aka UMS <br>
-##Programming Language 2 , AIUB </p>
+##Programming Language 2 
+Faculty : BAYZID ASHIK HOSSAIN
+AIUB</p>
 
 <p>This is a very basic prototype level programme for project works regrading final term. <br>
 Used C++ (GNU GCC Complier) technologies .</p>
