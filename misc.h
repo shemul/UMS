@@ -140,7 +140,8 @@ int execute_op(int x)
             clean();
             fstream teach_db("teacher.txt");
             string output ;
-             teach_db >> output ;
+            teach_db.seekg(0,ios::beg);
+            teach_db >> output ;
              cout << output ;
             break;
         }
