@@ -1,26 +1,32 @@
+### University Management System aka UMS 
+American Internation University Bangladesh:
+Programming Language 2 Project:
+Faculty : HOSSAIN, BAYZID ASHIK :
 
-<p>#University Management System aka UMS <br>
-##Programming Language 2 
-Faculty : BAYZID ASHIK HOSSAIN
-AIUB</p>
+```
+C++
+GCC Compiler
+Codeblock
+```
 
-<p>This is a very basic prototype level programme for project works regrading final term. <br>
-Used C++ (GNU GCC Complier) technologies .</p>
+* Department 
+* * -Add Department
+    * * * - Teacher
+       * * * *  -Add new Teacher Information
+       * * * *  -View all teacher information
+       * * * *  -Delete a Teacher information 
+   * * *  - Student 
+       * * * *  -Add New Student Information
+       * * * *  -View all Student Information 
+       * * * *  -Delete a Student Information
+* * -view Department
+    * * * - view Teacher
+   * * *  - view Student
+* * -Delete Department
+    * * * -Delete 
 
-<p>Proposed Flowchart </p>
+### Authors and Contributors
+You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
 
-<p>Department <br>
--Add Department<br>
-    - Teacher<br>
-        -Add new Teacher Information<br>
-        -View all teacher information<br>
-        -Delete a Teacher information <br>
-    - Student <br>
-        -Add New Student Information<br>
-        -View all Student Information <br>
-        -Delete a Student Information<br>
--view Department<br>
-    - view Teacher<br>
-    - view Studnet<br>
--Delete Department<br>
-    -Delete </p>
+### Support or Contact
+Having trouble with Pages? Check out the documentation at http://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
