@@ -26,7 +26,7 @@ Codeblock
     * * * -Delete 
 
 ### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+I will update is soon @shemul
 
 ### Support or Contact
-Having trouble with Pages? Check out the documentation at http://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
+Having trouble with project? Check out the documentation at http://shemul.github.io/UMS/ or say hello to inbox@shemul.me and we’ll help you sort it out.
