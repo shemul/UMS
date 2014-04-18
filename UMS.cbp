@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="classes.h" />
+		<Unit filename="func.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
