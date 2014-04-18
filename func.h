@@ -12,6 +12,7 @@ void show_header()
 void clear()
 {
     system("CLS");
+    show_header();
 }
 void show_main_options()
 {
@@ -22,21 +23,22 @@ void show_main_options()
 }
 void show_dept_options()
 {
-    show_header();
+
     cout << "1. Add New Department" <<endl ;
     cout << "2. View All Dept" <<endl;
 
 }
 void show_teacher_options()
 {
-    show_header();
+
     cout << "1. Add New Teacher" <<endl ;
     cout << "2. View All Teacher list" <<endl;
+
 
 }
 void show_student_options()
 {
-    show_header();
+
     cout << "1. Add New Student" <<endl ;
     cout << "2. View All Student list" <<endl;
 
