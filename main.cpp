@@ -3,6 +3,7 @@
 int main()
 {
 
-    show_something();
+    show_header();
+    show_main_options();
 
 }

@@ -37,8 +37,9 @@
 	<stdlib.h>
 	<fstream>
 
-1397755237 source:c:\users\shemul\documents\github\ums\main.cpp
+1397801920 source:c:\users\shemul\documents\github\ums\main.cpp
 	"classes.h"
+	"func.h"
 
 1397747055 c:\users\shemul\documents\github\ums\misc.h
 	<iostream>
@@ -51,4 +52,7 @@
 	<fstream>
 	<stdlib.h>
 	<fstream>
+
+1397802062 c:\users\shemul\documents\github\ums\func.h
+	"classes.h"
 
