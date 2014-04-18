@@ -44,11 +44,7 @@ void show_student_options()
 
 }
 
-void dept_options()
-{
-    cout << "1. View Department List"<< endl ;
-    cout << "2. Back to main menu"<< endl ;
-}
+
 
 
 #endif // FUNC_H_INCLUDED

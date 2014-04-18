@@ -121,6 +121,18 @@ int main()
         case 3:
             clear();
             show_student_options();
+            cin >> choice ;
+            switch(choice)
+            {
+                case 1:
+                    cout << "1 ";
+                    break;
+                case 2:
+                    cout << "2";
+                    break;
+                default :
+                    cout << "Oops 404!" << endl;
+            }
             break ;
 
         default:
