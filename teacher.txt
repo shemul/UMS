@@ -1,7 +1,0 @@
-test
-cse
-2500
-
-Ashiq Sir
-CSSE
-233
