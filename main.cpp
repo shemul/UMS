@@ -57,6 +57,12 @@ int main()
 
                     }
                     break;
+                case 3:
+                    clear();
+                    cout << "Tell me the ID of Dept : ";
+                    cin >> str1 ;
+                    searcher(1,str1);
+                    break;
                 default:
                     cout <<"Oops 404 !" <<endl;
                     system("PAUSE");
@@ -115,6 +121,12 @@ int main()
 
                     }
                     break;
+                case 3:
+                    clear();
+                    cout << "Tell me the ID of Teacher : ";
+                    cin >> str1 ;
+                    searcher(2,str1);
+                    break;
 
             }
             break;
@@ -170,9 +182,16 @@ int main()
                         while (getline(student_db,str1))
                         {
                             cout << str1 <<endl;
+                            cout << "p";
                         }
 
                     }
+                    break;
+                case 3:
+                    clear();
+                    cout << "Tell me the ID of Student : ";
+                    cin >> str1 ;
+                    searcher(3,str1);
                     break;
                 default :
                     cout << "Oops 404!" << endl;
@@ -181,7 +200,6 @@ int main()
 
         default:
             clear();
-            show_header();
             cout << "Oops ! 404" << endl ;
 
     }
