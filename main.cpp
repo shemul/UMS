@@ -6,14 +6,31 @@ int main()
 
     string str1,str2,str3,str4 ;
     int int1 , int2 , int3,int4 ;
+   login: clear();
+    cout << "Please Enter PIN to access UMS (DEFAULT: aaaa) : " ;
+
+    cin >> str1 ;
+    if (login(str1)==4)
+    {
+        main:
+        clear();
+        show_main_options();
+    } else
+    {
+        clear();
+        cout << "LOGIN UNSUCCESSFUL" << endl << endl << endl;
+        system("PAUSE");
+
+        goto login;
+    }
 
 
-    show_main_options();
 
     cin >> choice ;
     switch(choice)
     {
         case 1 :
+            dept:
             clear();
             show_dept_options();
             cin >> choice ;
@@ -38,8 +55,9 @@ int main()
                             cout << "Failed to create db" <<endl;
                         }
                         dept_db << int1 <<"\t" << str1<<endl;
-                        cout << "Thank you " << endl;
+                        cout <<endl <<  " :: THANK YOU  ::" << endl <<endl;
                         system("PAUSE");
+                        goto dept ;
 
                     }
                     break;
@@ -56,19 +74,29 @@ int main()
                         }
 
                     }
+                    cout << "PRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto dept ;
                     break;
+
                 case 3:
                     clear();
                     cout << "Tell me the ID of Dept : ";
                     cin >> str1 ;
                     searcher(1,str1);
+                    cout << "PRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto dept ;
                     break;
+                case 5:
+                    goto main ;
                 default:
                     cout <<"Oops 404 !" <<endl;
                     system("PAUSE");
             }
             break;
         case 2 :
+            teacher:
             clear();
             show_teacher_options();
             cin >> choice;
@@ -102,8 +130,11 @@ int main()
                                 cout << "Failed to create db" <<endl;
                             }
                             teacher_db << int1 <<"\t" << str1 <<"\t"<< int2 <<"\t"<< str2 <<"\t"<< str3 <<endl;
-                            cout << "Thank you " << endl;
+                            cout << ":: THANK YOU :: " << endl<<endl ;
                         }
+                    cout << "PRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto teacher ;
                     break;
                 case 2:
                     //
@@ -120,17 +151,26 @@ int main()
                         }
 
                     }
+                    cout << "\nPRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto teacher ;
                     break;
                 case 3:
                     clear();
                     cout << "Tell me the ID of Teacher : ";
                     cin >> str1 ;
                     searcher(2,str1);
+                    cout << "\nPRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto teacher ;
                     break;
+                case 5:
+                    goto main ;
 
             }
             break;
         case 3:
+            student:
             clear();
             show_student_options();
             cin >> choice ;
@@ -170,6 +210,9 @@ int main()
                             student_db << int1 <<"\t" << str1 <<"\t"<< int2 <<"\t"<< str2 <<"\t"<< str3 << "\t" << int4 <<"\t" <<str4 <<endl;
                             cout << "Thank you " << endl;
                         }
+                    cout << "\nPRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto student ;
                     break;
                 case 2:
                     clear();
@@ -182,26 +225,44 @@ int main()
                         while (getline(student_db,str1))
                         {
                             cout << str1 <<endl;
-                            cout << "p";
+
                         }
 
                     }
+                    cout << "\nPRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto student ;
                     break;
                 case 3:
                     clear();
                     cout << "Tell me the ID of Student : ";
                     cin >> str1 ;
                     searcher(3,str1);
+                    cout << "\nPRESS ENTER TO GO BACK"<< endl << endl ;
+                    system("PAUSE");
+                    goto student ;
                     break;
+                case 5:
+                    goto main ;
                 default :
                     cout << "Oops 404!" << endl;
+                    system("PAUSE");
+                    goto student ;
             }
             break ;
-
+                case 4 :
+                    clear();
+                    change_pin();
+                    system("PAUSE");
+                    goto login ;
+                    break ;
         default:
             clear();
             cout << "Oops ! 404" << endl ;
+            system("PAUSE");
+            goto main ;
 
     }
+
 
 }

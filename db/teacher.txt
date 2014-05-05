@@ -1,3 +1,3 @@
-5451	asd
-887	Arc	114457	Ashiq	sir
-884	asd	69	asdd	qwe
+111	ARC	444	A.Sir	PL
+222	CSE	555	B.Mam	DBase
+333	EEE	666	C.Sir	BUSCOM

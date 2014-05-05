@@ -2,7 +2,8 @@
 #define FUNC_H_INCLUDED
 // added classes.h for all property for a project ..
 #include "classes.h"
-
+string temp ;
+void go_back();
 void show_header()
 {
     cout <<"\t\t\t" << "UNIVERSITY MANAGEMNET SYSTEM"<<endl;
@@ -16,10 +17,11 @@ void clear()
 }
 void show_main_options()
 {
-    show_header();
+
     cout << "1. Departments" <<endl ;
     cout << "2. Teachers" <<endl;
     cout << "3. Students" <<endl<<endl;
+    cout << "4. Change Login PIN" << endl << endl ;
 }
 void show_dept_options()
 {
@@ -27,6 +29,9 @@ void show_dept_options()
     cout << "1. Add New Department" <<endl ;
     cout << "2. View All Dept" <<endl;
     cout << "3. Search Department" << endl;
+    go_back();
+
+
 
 }
 void show_teacher_options()
@@ -35,6 +40,7 @@ void show_teacher_options()
     cout << "1. Add New Teacher" <<endl ;
     cout << "2. View All Teacher list" <<endl;
     cout << "3. Search Teacher by ID" << endl;
+    go_back();
 
 
 }
@@ -44,7 +50,33 @@ void show_student_options()
     cout << "1. Add New Student" <<endl ;
     cout << "2. View All Student list" <<endl;
     cout << "3. Search Student by ID" << endl;
+    go_back();
 
+}
+
+int login(string pin)
+{
+    string pass ;
+    fstream log("./db/users.txt") ;
+    log >> pass ;
+    if (pin == pass)
+    {
+        return 4 ;
+    }
+}
+
+void change_pin()
+{
+    fstream log("./db/users.txt");
+    cout << "Please Enter new PIN : ";
+    cin >> temp ;
+    log << temp ;
+    cout << "PIN has been changed ! " << endl << endl ;
+
+}
+void go_back()
+{
+    cout << endl << "5. Back" << endl;
 }
 
 void searcher (int choice , string query)
